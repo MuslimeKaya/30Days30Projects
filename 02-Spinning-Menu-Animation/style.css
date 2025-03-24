@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #b3b1b1;
+  background-color: #b0c5dc;
   color: #222;
   margin: 0;
   overflow-x: hidden;
@@ -33,7 +33,7 @@ body {
 }
 
 .circle {
-  background-color: #68650b;
+  background-color: #0348c7b1;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -92,6 +92,8 @@ body {
 
 .content img {
   max-width: 100%;
+  width: 700px;
+  height: 500px;
 }
 
 nav {
