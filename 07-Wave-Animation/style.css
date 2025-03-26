@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Triangles&display=swap');
+
+
+:root{
+    --blue-color:#2b0339;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0,  0.6);
+}
+
+.container h1{
+    color: var(--blue-color);
+    margin-bottom: 30px;
+    text-align: center;
+}
+.container a{
+    text-decoration: none;
+    color: var(--blue-color);
+}
+.form-control{
+    position: relative;
+    margin: 20px 0px 40px ;
+}
+
+.form-control input {
+    border: 0;
+    border-bottom: 2px solid #e8e8e8;
+    display: block;
+    width: 100%;
+    padding: 16px;
+    color: #333;
+}
+.form-control input:focus,
+.form-control :valid{
+    outline: none;
+    border-bottom-color:#999 ; 
+    font-size: 16px;
+}
+
+
+.btn{
+    font-family: inherit;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background-color: var(--blue-color) ;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+.text{
+    font-size: 13px;
+    margin-top: 30px;
+}
+.text a:hover{
+    text-shadow: 3px 3px 10px rgba(0, 0, 0,  0.2);
+}
+.form-control label {
+position: absolute;
+top: 15px;
+left: 0;
+}
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+   transition: 0.3s cubic-bezier(0.7, -0.6, 0.3,1.55);
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: #999;
+  transform: translateY(-30px);
+}
