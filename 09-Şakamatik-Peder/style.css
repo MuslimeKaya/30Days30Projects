@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Triangles&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+  background-color: #dceff3;
+  margin: 0;
+  overflow: hidden;
+  padding: 20px;
+}
+.container {
+  background-color: #e7bb37;
+  padding: 60px 30px;
+  text-align: center;
+  border-radius: 10px;
+  width: 800px;
+  max-width: 100%;
+  color: #2c2d2a;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  margin: 0;
+  letter-spacing: 2px;
+  opacity: 0.5;
+  color: #2c2d2a;
+}
+.joke {
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  max-width: 600px;
+  margin: 50px auto;
+}
+.btn {
+  background-color: #545547;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  padding: 15px 30px;
+  border-radius: 40px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:focus {
+  outline: none;
+}
