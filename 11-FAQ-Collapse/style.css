@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Triangles&display=swap');
+:root {
+    --orange-color: #3b0239;
+  }
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: #B5A8D5;
+    margin: 0;
+}
+h1{
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.669);
+    color: white;
+    text-align: center;
+    padding: 30px 50px;
+    letter-spacing: 2px;
+}
+
+.faq-container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.faq{
+    background-color: transparent;
+    border: 3px solid  #580454;
+    border-radius: 20px;
+    margin: 30px 0;
+    padding: 30px;
+    overflow: hidden;
+    transform: 0.3s ease;
+    position: relative;
+}
+.faq.active{
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+    border: 3px solid var(--orange-color);
+}
+
+.faq.active::before, .faq.active::after{
+    content: "\f075";
+    font-family: 'Font Awesome 6 Free';
+    color: #d3dae8;
+    font-size: 7rem;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+    opacity: 0.2;
+}
+.faq.active::before{
+    color: #dee2f0;
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+}
+
+.faq-title{
+    margin: 0 35px 0 0;
+    transition: 0.3s ease;
+}
+.faq.active .faq-title{
+    color: var(--orange-color);
+}
+.faq-text{
+    margin: 30px 0 0;
+    display: none;
+}
+.faq.active .faq-text{
+    display: block;
+}
+.faq-toggle{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    transition: 0.3s ease;
+}
+
+.faq.active .faq-toggle{
+    color: var(--orange-color);
+}
+.faq-toggle .fa-xmark{
+    display: none;
+}
+.faq.active .faq-toggle .fa-xmark{
+    display: block;
+}
+.faq.active .faq-toggle .fa-chevron-down{
+    display: none;
+}
