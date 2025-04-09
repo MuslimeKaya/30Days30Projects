@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Triangles&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --green-color: #1b4707;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    color: var(--green-color);
+    font-weight: bold;
+}
+
+.content {
+    font-size: 20px;
+}
+
+.speed {
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(59, 164, 78, 0.073);
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+input{
+    width: 60px;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--green-color);
+    color: white;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
