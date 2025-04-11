@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Triangles&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "sniglet", cursive;
+    background: url(img/a.png) center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow-y: auto;
+    padding-top: 2rem;
+}
+
+.quiz-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100,  0.1);
+    width: 600px;
+    margin-bottom: 20rem;
+}
+.quiz-header{
+    padding: 4rem;
+}
+h2 {
+    padding: 0 1rem;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
+.submit {
+    border: none;
+    background-color: #ffb703;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: block;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    padding: 1rem;
+    cursor: pointer;
+}
+#submit:focus:after {
+    content: ", Son Kararım 👍";
+}
+
+#submit:focus {
+  outline: none;
+  background-color: chartreuse;
+}
+[type='radio']:checked, 
+[type='radio']:not(:checked){
+display: none;
+}
+
+[type='radio']:checked + label, 
+[type='radio']:not(:checked) + label {
+    position: relative;
+    padding-left: 1.8rem;
+    cursor: pointer;
+}
+
+[type='radio']:checked + label:before, 
+[type='radio']:not(:checked) + label:before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #ddd;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 100%;
+    background-color: white;
+}
+
+[type='radio']:checked + label:after, 
+[type='radio']:not(:checked) + label:after{
+    content: "";
+    position: absolute;
+    height: 0.75rem;
+    width: 0.75rem;
+    left: 4px;
+    top: 4px;
+    background-color: #ffb703;
+    transition: all 0.2s ease;
+    border-radius: 100%;
+}
+[type='radio']:not(:checked) + label:after{
+    opacity: 0;
+}
+
+[type='radio']:checked + label:after{
+ opacity: 1;
+
+}
