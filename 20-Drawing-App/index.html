@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Çizim Uygulaması</title>
+</head>
+<body>
+  <canvas id="canvas" width="1226" height="585" style="background-color: #f8f9fa;"></canvas>
+  
+  <div class="toolbar">
+    <button id="decrease" class="tooltip">➖
+      <span class="tooltiptext">Küçült</span>
+    </button>
+    <span id="size">8</span>
+    <button id="increase" class="tooltip">➕
+      <span class="tooltiptext">Büyüt</span>
+    </button>
+    
+    <div class="divider"></div>
+    
+    <button id="pencil" class="tooltip">✏️
+      <span class="tooltiptext">Kalem</span>
+    </button>
+    <button id="eraser" class="tooltip">🧹
+      <span class="tooltiptext">Silgi</span>
+    </button>
+    
+    <div class="divider"></div>
+    
+    <input type="color" id="color" class="tooltip" />
+    
+    <div class="divider"></div>
+    
+    <button id="undo" class="tooltip">↩️
+      <span class="tooltiptext">Geri Al</span>
+    </button>
+    <button id="clear" class="tooltip">🧽
+      <span class="tooltiptext">Temizle</span>
+    </button>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>

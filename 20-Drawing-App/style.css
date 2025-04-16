@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sniglet', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #80807d;
+}
+
+canvas {
+    border: 5px solid rgb(228, 215, 22);
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 2px 2px 3px rgba(17, 13, 0, 0.8);
+}
+
+.toolbar {
+    background-color: #5e5d5e;
+    display: flex;
+    width: 1235px;
+    border-radius: 0 0 10px 10px;
+    border: 5px solid rgb(228, 215, 22);
+    border-top: none;
+    padding: 1rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+.toolbar > * {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: inherit;
+    color: rgb(238, 238, 238);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    cursor: pointer;
+    transition: color ease 0.5s;
+    box-shadow: 2px 2px 3px rgba(190, 178, 7, 0.958);
+}
+
+.toolbar > *:last-child {
+    margin-left: auto;
+}
+
+.toolbar button:active {
+    transform: scale(0.9);
+}
+
+.toolbar button:hover {
+    color: black;
+}
+
+.toolbar button.active {
+    color: #a21076;
+    text-shadow: 0 0 2px rgba(220, 8, 167, 0.4);
+}
+
+.toolbar button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #a21076;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.divider {
+    width: 1px;
+    height: 40px;
+    background-color: rgba(78, 4, 60, 0.3);
+    margin: 0 10px;
+}
