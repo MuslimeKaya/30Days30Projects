@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="app.js"></script>
+    <title>Password UI</title>
+  </head>
+
+  <body class="bg-gray-800 min-h-screen flex items-center justify-center">
+    <div class="background" id="background"></div>
+
+    <div
+      class="bg-black bg-opacity-82 rounded p-10 text-center shadow-2xl shadow-black"
+    >
+      <h1 class="text-lg font-bold text-yellow-800 mb-4">Sign up</h1>
+
+      <p class="text-sm text-white mb-6">
+        Looks like you don't have an account. Let's create a new account for
+        <span class="font-bold text-yellow-500">muslime@gmail.com</span>
+      </p>
+
+      <div class="my-4 text-left">
+        <label for="email" class="text-white">Email:</label>
+        <input
+          type="text"
+          class="border block w-full p-2 mt-2 rounded"
+          id="email"
+          required
+          placeholder="Please Enter Email"
+        />
+      </div>
+
+      <div class="my-4 text-left">
+        <label for="password" id="passwordLabel" class="text-white"
+          >Password:</label
+        >
+        <input
+          type="password"
+          class="border block w-full p-2 mt-2 rounded"
+          id="password"
+          required
+          placeholder="Please Enter Password"
+        />
+      </div>
+
+      <button
+        class="bg-yellow-500 text-white py-2 mt-2 inline-block w-full rounded hover:bg-yellow-600 transition-all"
+        type="submit"
+      >
+        Continue
+      </button>
+    </div>
+  </body>
+</html>
