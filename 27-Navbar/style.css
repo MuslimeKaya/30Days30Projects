@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #222;
+}
+
+.container {
+    max-width: 1820px;
+    margin: 0 auto;
+}
+
+.log {
+    max-width: 1820px;
+
+}
+
+.nav {
+    position: fixed;
+    background-color: blue;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+    font-size: 16px;
+}
+
+.nav .container {
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav .current {
+    color: rgb(179, 2, 141);
+    font-weight: bold;
+}
+
+.nav.move {
+    background-color: blue;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.move.container {
+    padding: 1rem 0;
+}
+
+.nav.move.current {
+    color: yellowgreen;
+    font-size: bold;
+}
+
+.hero {
+    background-image: url('image/img.jpg');
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 1rem;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.hero .container {
+    width: 100%;
+    max-width: 700px;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    margin: -1rem 1rem 1rem;
+}
+
+.hero p {
+    font-size: 1.3rem;
+}
+
+.content {
+    padding: 1rem;
+}
+
+.content h2 {
+    font-size: 16px;
+    margin: 2rem 0;
+}
+
+.content p {
+    color: #161616;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+@media (max-width: 480px) {
+    .logo {
+        display: none;
+    }
+}
