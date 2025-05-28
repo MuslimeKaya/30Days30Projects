@@ -12,3 +12,7 @@
 ## Organization:
 - Projects are organized into folders for easy navigation.
 - Click on any project in the "Projects" section to explore its source code and learn more.
+
+--
+
+## Merhaba Müslime Sadece Forklama Üstüne Çalışıyordumda 👉👈
